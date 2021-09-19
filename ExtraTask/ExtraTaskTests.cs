@@ -9,6 +9,7 @@ namespace ExtraTask
     {
         private readonly string appiumServer = "http://192.168.0.234:4723/wd/hub";
         private readonly string deviceName = "emulator-5554";
+        private readonly string appFullPathInAppiumServer = "your apk full path in appium server machine";
         private readonly int tutorialPagesCount = 4;
         TimeSpan defaultTimeout = TimeSpan.FromSeconds(15);
 
@@ -17,13 +18,9 @@ namespace ExtraTask
         [SetUp]
         public void Setup()
         {
-
-            String path = System.Reflection.Assembly.GetExecutingAssembly().Location;
-            var directory = System.IO.Path.GetDirectoryName(path);
-
             var driverOptions = new AppiumOptions();
             driverOptions.AddAdditionalCapability("platformName", "Android");
-            driverOptions.AddAdditionalCapability("app", $"{directory}\\debug.apk");
+            driverOptions.AddAdditionalCapability("app", appFullPathInAppiumServer);
             driverOptions.AddAdditionalCapability("deviceName", deviceName);
             driverOptions.AddAdditionalCapability("appWaitActivity", "com.example.newsapp.tutorial.TutorialActivity");
             driverOptions.AddAdditionalCapability("appWaitPackage", "com.example.newsapp");

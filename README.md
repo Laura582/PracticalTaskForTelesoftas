@@ -47,10 +47,16 @@ Use this directory to store your web driver
 - If you are using Chrome version 93, please download ChromeDriver 93.0.4577.63
 - If you are using Chrome version 92, please download ChromeDriver 92.0.4515.107
 
-To run Android test you will need to set up an Appium server and Android emulator. In ExtraTaskTests.cs you will need to change deviceName to your device name and you will need to change appiumServer into your Appium server Uri
+To run Android test you will need to set up an Appium server and Android emulator. 
+In ExtraTaskTests.cs you will need to change:
+- deviceName into your device name
+- appiumServer into your Appium server Uri
+- appFullPathInAppiumServer into your apk full path
+
 ```
 private readonly string appiumServer = "http://192.168.0.234:4723/whub";
 private readonly string deviceName = "emulator-5554";
+private readonly string appFullPathInAppiumServer = "your apk full path in appium server machine";
 ```
 #### Note
 You can search device name in Android Studio SDK folder by running 
