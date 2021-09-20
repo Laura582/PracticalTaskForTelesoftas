@@ -42,16 +42,15 @@ Use this directory to store your web driver
 \PracticalTaskForTelesoftas\chromedriver.exe
 ```
 
-
 - If you are using Chrome version 94, please download ChromeDriver 94.0.4606.41
 - If you are using Chrome version 93, please download ChromeDriver 93.0.4577.63
 - If you are using Chrome version 92, please download ChromeDriver 92.0.4515.107
 
 To run Android test you will need to set up an Appium server and Android emulator. 
-In ExtraTaskTests.cs you will need to change:
+In DriverBuilder.cs you will need to change:
 - deviceName into your device name
 - appiumServer into your Appium server Uri
-- appFullPathInAppiumServer into your apk full path
+- appFullPathInAppiumServer into your apk full path in appium server machine
 
 ```
 private readonly string appiumServer = "http://192.168.0.234:4723/whub";

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task2", "Task2\Task2.csproj", "{0D7FF2AC-5F24-4055-839B-9481D6FBBE67}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task3", "Task3Tests\Task3.csproj", "{64C63E6D-7F9C-41B0-A2C9-CD9ED4E26D19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task3", "Task3\Task3.csproj", "{64C63E6D-7F9C-41B0-A2C9-CD9ED4E26D19}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtraTask", "ExtraTask\ExtraTask.csproj", "{AE15CD8D-4F13-45A6-B6AD-6D2A3E8C15AF}"
 EndProject
