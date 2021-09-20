@@ -63,5 +63,8 @@ You can search device name in Android Studio SDK folder by running
 adb devices
 ```
 
+#### Note
+If VisualStudio does not recognize SpecFlow tests - install SpecFlow extension for VisualStudio using Extensions -> Manage Extensions
+
 ## Running the test
 To run tests, you will need to go to the parent folder and open .sln file, open Test Explorer and click "Run All Tests In View" or click (Ctrl + R, V)
